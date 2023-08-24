@@ -1,0 +1,20 @@
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: wheat;
+    height: 10vh;
+}
+.menu{
+color: rgb(122, 30, 2);
+}
+.home{
+    color:rgb(122, 30, 2);
+}
+.register{
+    color: rgb(122, 30, 2);
+}
+.profile{
+    color: rgb(122, 30, 2);
+}

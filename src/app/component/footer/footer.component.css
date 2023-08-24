@@ -1,0 +1,8 @@
+.foot{
+    background-color: wheat;
+    color: rgb(122, 30, 2);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,51 @@
+
+.padre{
+    background-image:url(../../../assets/imagenes/fondo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.hijo1 h1{
+    height: 100%;
+    width: 100%;
+    border: 5px solid #fafafa10;
+   border-radius: 12px;
+   backdrop-filter: blur(0.1rem);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: rgb(255, 255, 255) ;
+   text-align: center;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding: 5px;
+} 
+.imagen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+ .imagen img{
+    height: 70%;
+    width: 20%;
+    border: 5px solid #fafafa10;
+    border-radius: 15px;
+    backdrop-filter: blur(0.1rem);
+
+} 
+.hijo2 h1{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 5px solid #fafafa10;
+    border-radius: 10px;
+    backdrop-filter: blur(0.1rem);
+    color: white;
+} 
