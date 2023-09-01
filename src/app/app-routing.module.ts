@@ -5,6 +5,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormRegisterComponent } from './component/form-register/form-register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { BooksComponent } from './pages/books/books.component';
+
 
 const routes: Routes = [
   {path: "", redirectTo: "home", pathMatch: "full"},
@@ -14,6 +16,7 @@ const routes: Routes = [
   {path: "form-register", component: FormRegisterComponent},
   {path: "register", component: FormRegisterComponent},
   {path: "profile", component: ProfileComponent},
+  {path: "Books", component:BooksComponent},
 ];
 
 @NgModule({

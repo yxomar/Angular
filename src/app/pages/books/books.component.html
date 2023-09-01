@@ -1,0 +1,73 @@
+<!-- <p>books works!</p> -->
+<div class="padre">
+<div class="hijo1">
+    <div class="if" *ngIf="books.length === 0">
+        Agrega un libro.
+    </div>
+
+    <div class="card-container" *ngFor="let book of books; let even = even">
+        <div class="card">
+        <div class="img-content">
+          <div class="img"><img src="{{book.photo}}"></div>
+        </div>
+        <div class="content">
+        <div class="title"> Title: {{book.title}} </div>
+        <div class="autor"> Author: {{book.author}} </div>
+        <div class="id"> Type: {{book.type}} </div>
+        <div class="id"> Price: {{book.price}} </div>
+        <div class="id"> {{book | ref}} </div>
+        <div class="id"> User: {{book.id_user}} </div>
+        <button [ngClass]="even ? 'color1' : 'color2'">Shop</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="hijo2">
+        <form class="form">
+    
+            <div class="flex">
+                <div class="abc">
+                    <input class="input" type="text" #photo>
+                    <span>Photo</span>
+                </div>
+        
+                <div class="abc">
+                    <input class="input" type="text" #title>
+                    <span>Title</span>
+                </div>
+            </div>  
+                    
+            <div class="abc">
+                <input class="input" type="text" #author>
+                <span>Author</span>
+            </div> 
+                
+            <div class="abc">
+                <input class="input" placeholder="" type="text" #type>
+                <span>Type</span>
+            </div>
+            <div class="abc">
+                <input class="input" placeholder="" type="text" #price >
+                <span>Price</span>
+            </div>
+
+            <div class="abc">
+                <input class="input" placeholder="" type="text" #book >
+                <span>id_book</span>
+            </div>
+
+            <div class="abc">
+                <input class="input" placeholder="" type="text" #user >
+                <span>id_user</span>
+            </div>
+            
+            
+
+            <button type="button" class="fancy" on-click="createbook(photo.value,title.value,author.value,type.value,price.value,book.value,user.value)">
+                Create
+            </button>
+        </form>
+    </div>
+
+</div>
