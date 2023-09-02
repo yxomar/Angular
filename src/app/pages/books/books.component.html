@@ -4,25 +4,9 @@
     <div class="if" *ngIf="books.length === 0">
         Agrega un libro.
     </div>
-
-    <div class="card-container" *ngFor="let book of books; let even = even">
-        <div class="card">
-        <div class="img-content">
-          <div class="img"><img src="{{book.photo}}"></div>
-        </div>
-        <div class="content">
-        <div class="title"> Title: {{book.title}} </div>
-        <div class="autor"> Author: {{book.author}} </div>
-        <div class="id"> Type: {{book.type}} </div>
-        <div class="id"> Price: {{book.price}} </div>
-        <div class="id"> {{book | ref}} </div>
-        <div class="id"> User: {{book.id_user}} </div>
-        <button [ngClass]="even ? 'color1' : 'color2'">Shop</button>
-        </div>
-      </div>
-      </div>
-    </div>
     
+   <app-card class="card-container" *ngFor="let book of books; let even = even" [book]="book" [even]="even" [books]="books" (bookdel)="delete($event)"></app-card>
+   </div> 
     <div class="hijo2">
         <form class="form">
     
@@ -63,11 +47,12 @@
             </div>
             
             
-
-            <button type="button" class="fancy" on-click="createbook(photo.value,title.value,author.value,type.value,price.value,book.value,user.value)">
+<div class="boton1">
+            <button type="button" class="boton" on-click="createbook(photo.value,title.value,author.value,type.value,price.value,book.value,user.value)">
                 Create
             </button>
+        </div>
         </form>
     </div>
-
 </div>
+

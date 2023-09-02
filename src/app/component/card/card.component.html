@@ -1,0 +1,27 @@
+<div class="myCard">
+  <div class="innerCard">
+      <div class="frontSide">
+        <div class="img"><img src="{{book.photo}}"></div>
+      </div>
+      <div class="backSide">
+        <div class="title"> Title: {{book.title}} </div>
+    <div class="autor"> Author: {{book.author}} </div>
+    <div class="id"> Type: {{book.type}} </div>
+    <div class="id"> Price: {{book.price}} </div>
+    <div class="id"> {{book | ref}} </div>
+    <div class="id"> User: {{book.id_user}} </div>
+    <div class="botones">
+      <button [ngClass]="even ? 'color1' : 'color2'">Shop</button>
+      <button type="button" class="nada" on-click="delete(book)">delete</button>
+<!-- <button type="button" class="noselect" on-click="deleteBook(book)"><span class="text" >Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button> -->
+      
+      </div>
+
+      </div>
+  </div>
+</div>
+
+
+   
+  
+  

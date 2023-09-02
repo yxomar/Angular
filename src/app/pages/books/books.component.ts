@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Book } from 'src/app/models/book';
 
 @Component({
@@ -23,10 +23,12 @@ public createbook(photo:string,title:string,author:string,type:string,price:numb
 let newbook:Book = new Book(id_book,id_user,title,type,author,price,photo)
 this.books.push(newbook)
 console.log(newbook);
-
-
 }
 
+delete(book:Book):void{
+  this.books = this.books.filter(b => b.id_book !== book.id_book);
 
+  
+}
 
 }
