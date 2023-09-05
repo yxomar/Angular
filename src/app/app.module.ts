@@ -12,6 +12,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { BooksComponent } from './pages/books/books.component';
 import { RefPipe } from './pipes/ref.pipe';
 import { CardComponent } from './component/card/card.component';
+import { AddbooksComponent } from './pages/addbooks/addbooks.component';
+import { UpdatebooksComponent } from './pages/updatebooks/updatebooks.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,12 +30,15 @@ import { CardComponent } from './component/card/card.component';
     BooksComponent,
     RefPipe,
     CardComponent,
+    AddbooksComponent,
+    UpdatebooksComponent,
 
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

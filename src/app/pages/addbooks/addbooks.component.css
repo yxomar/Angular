@@ -1,0 +1,121 @@
+
+.padre{
+    background-image: url(../../../assets/imagenes/formu.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+    background-color: #355891;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .message {
+    color: #355891;
+    font-size: 14px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form .abc {
+    position: relative;
+  }
+  
+  .form .abc .input {
+    width: 90%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+  }
+  
+  .form .abc .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form .abc .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form .abc .input:focus + span,.form .abc .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form .abc .input:valid + span {
+    color: green;
+  }
+  
+  .input01 {
+    width: 90%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+  }
+  
+  .form .abc .input01 + span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form .abc .input01:placeholder-shown + span {
+    top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .form .abc .input01:focus + span,.form .abc .input01:valid + span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form .abc .input01:valid + span {
+    color: green;
+  }
+  .boton{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .boton1{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }

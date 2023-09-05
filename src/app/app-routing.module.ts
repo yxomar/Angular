@@ -7,7 +7,8 @@ import { FormRegisterComponent } from './component/form-register/form-register.c
 import { ProfileComponent } from './pages/profile/profile.component';
 import { BooksComponent } from './pages/books/books.component';
 import { CardComponent } from './component/card/card.component';
-
+import { AddbooksComponent } from './pages/addbooks/addbooks.component';
+import { UpdatebooksComponent } from './pages/updatebooks/updatebooks.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "home", pathMatch: "full"},
@@ -19,6 +20,8 @@ const routes: Routes = [
   {path: "profile", component: ProfileComponent},
   {path: "Books", component:BooksComponent},
   {path: "card", component:CardComponent},
+  {path: "addbooks", component:AddbooksComponent},
+  {path: "updatebooks", component:UpdatebooksComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,41 @@
+<div class="padre">
+
+    <form class="form">
+        <p class="heading">Update</p>
+    <div class="ppp">
+        <label>Photo</label>
+        <input class="input"  #photo type="text">
+    
+        <label >title</label>
+        <input class="input" #title type="text">
+    
+        <label>Author</label>
+        <input class="input" #author type="text"> 
+    </div>
+    
+    <div class="tres">
+        <label>Type</label>
+        <input  class="input" #type type="text">
+   
+        <label>Price</label>
+        <input  class="input" #price type="number">
+    
+        <label>Ref-Book</label>
+        <input  class="input" #id_book type="number">
+    
+        
+    </div>
+     <div class="dos">
+<label>Ref-User</label>
+        <input  class="input" #id_user type="number">
+
+        
+        <button type="button" class="btn" on-click="editbook(photo.value,title.value,author.value,type.value,price.value,id_book.value,id_user.value)">edit</button>    
+    </div>
+</form>
+     
+
+</div>
+
+
+

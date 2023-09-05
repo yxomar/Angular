@@ -1,0 +1,48 @@
+<!-- <p>addbooks works!</p> -->
+<div class="padre">
+<form class="form">
+    
+    <div class="flex">
+        <div class="abc">
+            <input class="input" type="text" #photo>
+            <span>Photo</span>
+        </div>
+
+        <div class="abc">
+            <input class="input" type="text" #title>
+            <span>Title</span>
+        </div>
+    </div>  
+            
+    <div class="abc">
+        <input class="input" type="text" #author>
+        <span>Author</span>
+    </div> 
+        
+    <div class="abc">
+        <input class="input" placeholder="" type="text" #type>
+        <span>Type</span>
+    </div>
+    <div class="abc">
+        <input class="input" placeholder="" type="text" #price >
+        <span>Price</span>
+    </div>
+
+    <div class="abc">
+        <input class="input" placeholder="" type="text" #book >
+        <span>id_book</span>
+    </div>
+
+    <div class="abc">
+        <input class="input" placeholder="" type="text" #user >
+        <span>id_user</span>
+    </div>
+    
+    
+<div class="boton1">
+    <button type="button" class="boton" on-click="createbook(photo.value,title.value,author.value,type.value,price.value,book.value,user.value)">
+        Create
+    </button>
+</div>
+</form>
+</div>
